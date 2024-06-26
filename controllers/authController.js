@@ -4,9 +4,9 @@ const jwt=require("jsonwebtoken")
 // user register
 module.exports.register=async(req,res)=>{
     try {
-        const {username,email,password,adress,phone}=req.body;
+        const {username,email,password,adress,phone,answer}=req.body;
 
-        if(!username || !email || !password || !adress || !phone){
+        if(!username || !email || !password || !adress || !phone || !answer){
             return res.status(400).json({message:"all fields are required",success:0,error})
         }
 

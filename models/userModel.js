@@ -32,6 +32,10 @@ const userSchema=new mongoose.Schema({
         type:String,
         required:[true,"image type is required"],
         default:"https://icon-library.com/images/default-user-icon/default-user-icon-3.jpg"
+    },
+   answer:{
+            type:String,
+            required:[true,"answer is required"]
     }
 },{
     timestamps:true
